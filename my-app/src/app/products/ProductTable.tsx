@@ -2,7 +2,20 @@
 
 import { useState, useMemo } from "react";
 
-export default function ProductTable({ products }) {
+type Product = {
+  id: number;
+  title: string;
+  brand: string;
+  price: number;
+  rating: number;
+  thumbnail: string;
+};
+
+type ProductTableProps = {
+  products: Product[];
+};
+
+export default function ProductTable({ products }: ProductTableProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [page, setPage] = useState(1);
   const itemsPerPage = 10;
