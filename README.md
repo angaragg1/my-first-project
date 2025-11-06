@@ -1,2 +1,3 @@
-# my-first-project
-This is project for employment
+# Төслийн эхний даалгавар
+Энэ даалгаварт бүтээгдэхүүний жагсаалтыг харуулах юм.
+
