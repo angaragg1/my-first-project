@@ -81,7 +81,7 @@ export default function ProductTable({ products }: ProductTableProps) {
                   <td className="px-4 py-2 font-semibold text-blue-600">
                     ${p.price.toFixed(2)}
                   </td>
-                  <td className="px-4 py-2">⭐ {p.rating}</td>
+                  <td className="px-4 py-2">{p.rating}</td>
                 </tr>
               ))
             ) : (

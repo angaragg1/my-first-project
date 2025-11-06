@@ -5,7 +5,9 @@ export default async function ProductsPage() {
 
     await new Promise((resolve) => setTimeout(resolve, 2000)); //delay fetching to show loading.tsx page 
 
-    const res = await fetch("https://dummyjson.com/products?limit=100"); //{cache: "no-store",}
+    const res = await fetch("https://dummyjson.com/products?limit=100", {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error("Бүтээгдэхүүнийг татаж авахад алдаа гарлаа.");
