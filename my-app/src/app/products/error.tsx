@@ -1,6 +1,10 @@
 "use client";
 
-export default function Error({ error, reset }) {
+type ErrorProps = {
+  error: Error;
+  reset: () => void;
+};
+export default function Error({ error, reset }: ErrorProps) {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen bg-red-50 text-center">
       <h2 className="text-2xl font-bold text-red-600 mb-2">
